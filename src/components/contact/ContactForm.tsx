@@ -58,7 +58,7 @@ export function ContactForm({ endpoint }: ContactFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.9)] p-8 shadow-ambient">
+    <form onSubmit={handleSubmit} className="space-y-6 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.9)] p-8 shadow-ambient">
       <div>
         <label className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-3)]" htmlFor="name">
           Name
@@ -101,7 +101,7 @@ export function ContactForm({ endpoint }: ContactFormProps) {
       <div className="relative">
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center rounded-full border border-transparent bg-[color:var(--pri-500)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(160,80,123,0.22)] transition-transform duration-120 ease-launch hover:translate-y-[-2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--pri-400)] focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--bg-0)] disabled:cursor-wait"
+          className="inline-flex w-full items-center justify-center rounded-full border border-transparent bg-[color:var(--pri-500)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(169,94,94,0.22)] transition-transform duration-120 ease-launch hover:translate-y-[-2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--pri-400)] focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--bg-0)] disabled:cursor-wait"
           disabled={status === 'sending'}
         >
           {status === 'sending' ? 'Launching...' : status === 'success' ? 'Sent!' : 'Launch message'}
@@ -156,4 +156,6 @@ export function ContactForm({ endpoint }: ContactFormProps) {
     </form>
   );
 }
+
+
 

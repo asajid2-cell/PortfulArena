@@ -31,7 +31,7 @@ function ArenaScene({ prefersReducedMotion }: { prefersReducedMotion: boolean })
   return (
     <>
       <ambientLight intensity={0.45} />
-      <directionalLight position={[3, 7, 6]} intensity={1.1} color="#A0507B" castShadow />
+      <directionalLight position={[3, 7, 6]} intensity={1.1} color="#A95E5E" castShadow />
       <directionalLight position={[-4, 3, -5]} intensity={0.6} color="#752037" />
 
       <group rotation-x={-Math.PI / 2}>
@@ -41,7 +41,7 @@ function ArenaScene({ prefersReducedMotion }: { prefersReducedMotion: boolean })
         </mesh>
         <mesh position={[0, 0.09, 0]}>
           <ringGeometry args={[1.9, 2.3, 64]} />
-          <meshBasicMaterial color="#A0507B" opacity={0.32} transparent />
+          <meshBasicMaterial color="#A95E5E" opacity={0.32} transparent />
         </mesh>
         <mesh position={[0, 0.1, 0]}>
           <ringGeometry args={[1.3, 1.7, 64]} />
@@ -52,21 +52,21 @@ function ArenaScene({ prefersReducedMotion }: { prefersReducedMotion: boolean })
       <group ref={topGroupRef} position={[0, 0.38, 0]} rotation-x={Math.PI * 0.08}>
         <mesh castShadow>
           <cylinderGeometry args={[0.55, 0.45, 0.16, 48]} />
-          <meshStandardMaterial color="#A0507B" metalness={0.8} roughness={0.4} />
+          <meshStandardMaterial color="#A95E5E" metalness={0.8} roughness={0.4} />
         </mesh>
         <mesh position={[0, 0.18, 0]} castShadow>
           <cylinderGeometry args={[0.34, 0.4, 0.24, 32]} />
-          <meshStandardMaterial color="#551022" metalness={0.15} roughness={0.8} />
+          <meshStandardMaterial color="#1A222E" metalness={0.15} roughness={0.8} />
         </mesh>
         <mesh position={[0, 0.24, 0]}>
           <cylinderGeometry args={[0.26, 0.26, 0.12, 24]} />
-          <meshStandardMaterial color="#C6769E" metalness={0.7} roughness={0.42} />
+          <meshStandardMaterial color="#A95E5E" metalness={0.7} roughness={0.42} />
         </mesh>
       </group>
 
       <mesh ref={glowRef} rotation-x={-Math.PI / 2} position={[0, 0.2, 0]}>
         <ringGeometry args={[0.6, 0.95, 64]} />
-        <meshBasicMaterial color="#A0507B" transparent opacity={0.24} />
+        <meshBasicMaterial color="#A95E5E" transparent opacity={0.24} />
       </mesh>
 
       <mesh rotation-x={-Math.PI / 2} position={[0, 0.01, 0]}>
@@ -96,9 +96,9 @@ export function HeroArena() {
   const shouldRenderCanvas = supportsWebGL && !prefersReducedMotion;
 
   return (
-    <div className="relative h-72 shrink-0 overflow-hidden rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.92)] shadow-ambient lg:h-[420px] lg:w-[420px]">
+    <div className="relative h-72 shrink-0 overflow-hidden rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.92)] shadow-ambient lg:h-[420px] lg:w-[420px]">
       <div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_28%_18%,rgba(117,32,55,0.42),transparent_65%),radial-gradient(circle_at_78%_62%,rgba(160,80,123,0.32),transparent_58%)]"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_28%_18%,rgba(117,32,55,0.42),transparent_65%),radial-gradient(circle_at_78%_62%,rgba(169,94,94,0.32),transparent_58%)]"
         aria-hidden="true"
       />
       {shouldRenderCanvas ? (
@@ -113,7 +113,7 @@ export function HeroArena() {
           </Suspense>
         </Canvas>
       ) : null}
-      <div className="absolute inset-8 rounded-[20px] border border-[color:rgba(160,80,123,0.28)] bg-[color:rgba(74,4,4,0.82)] backdrop-blur">
+      <div className="absolute inset-8 rounded-[20px] border border-[color:rgba(169,94,94,0.28)] bg-[color:rgba(11,16,22,0.82)] backdrop-blur">
         <div className="flex h-full flex-col justify-between p-6">
           <div className="space-y-3">
             <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--text-3)]">Project Telemetry</p>
@@ -136,3 +136,4 @@ export function HeroArena() {
     </div>
   );
 }
+

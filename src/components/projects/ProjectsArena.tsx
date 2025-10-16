@@ -80,10 +80,11 @@ export function ProjectsArena({ projects }: ProjectsArenaProps) {
         </AnimatePresence>
       </motion.div>
       {visibleProjects.length === 0 && (
-        <div className="rounded-card border border-dashed border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.52)] p-10 text-sm text-[color:var(--text-3)]">
+        <div className="rounded-card border border-dashed border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.52)] p-10 text-sm text-[color:var(--text-3)]">
           No projects match that filter yet. Try adjusting your filters or clear them.
         </div>
       )}
     </div>
   );
 }
+

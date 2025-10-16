@@ -59,13 +59,13 @@ const relatedEntries = (await getCollection('projects'))
         </p>
         <div class="flex flex-wrap gap-3">
           {project.stack?.map((tech) => (
-            <span class="rounded-full border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.88)] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--text-3)]">
+            <span class="rounded-full border border-[color:var(--line-1)] bg-[color:rgba(21,28,36,0.88)] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[color:var(--text-3)]">
               {tech}
             </span>
           ))}
         </div>
       </div>
-      <aside class="w-full max-w-[360px] space-y-6 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(86,22,43,0.86)] p-6 shadow-ambient lg:sticky lg:top-24">
+      <aside class="w-full max-w-[360px] space-y-6 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(21,28,36,0.86)] p-6 shadow-ambient lg:sticky lg:top-24">
         {project.role && (
           <div>
             <p class="text-xs uppercase tracking-[0.3em] text-[color:var(--text-3)]">Role</p>
@@ -115,7 +115,7 @@ const relatedEntries = (await getCollection('projects'))
       <article class="prose prose-invert max-w-none">
         <Content />
       </article>
-      <div class="grid gap-10 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(86,22,43,0.88)] p-10 shadow-ambient md:grid-cols-2">
+      <div class="grid gap-10 rounded-[24px] border border-[color:var(--line-1)] bg-[color:rgba(21,28,36,0.88)] p-10 shadow-ambient md:grid-cols-2">
         {project.problem && (
           <div>
             <h2 class="font-display text-xl text-[color:var(--text-1)]">Problem</h2>
@@ -161,4 +161,5 @@ const relatedEntries = (await getCollection('projects'))
     </section>
   ) : null}
 </BaseLayout>
+
 

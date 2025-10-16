@@ -41,7 +41,7 @@ export function ScrollProgress() {
   return (
     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 overflow-hidden">
       <motion.div
-        className="h-full origin-left bg-gradient-to-r from-[color:rgba(117,32,55,0.7)] via-[color:rgba(117,32,55,0.35)] to-[color:rgba(160,80,123,0.55)]"
+        className="h-full origin-left bg-gradient-to-r from-[color:rgba(117,32,55,0.7)] via-[color:rgba(117,32,55,0.35)] to-[color:rgba(169,94,94,0.55)]"
         style={{ scaleX: progress }}
       />
     </div>
@@ -49,4 +49,6 @@ export function ScrollProgress() {
 }
 
 export default ScrollProgress;
+
+
 

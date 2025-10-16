@@ -40,7 +40,7 @@ export function CareerTimeline({ events }: CareerTimelineProps) {
             >
               <span className="sr-only">{event.period}</span>
             </motion.div>
-            <div className="rounded-2xl border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.82)] p-5 shadow-ambient">
+            <div className="rounded-2xl border border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.82)] p-5 shadow-ambient">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-3)]">{event.role}</p>
@@ -67,4 +67,5 @@ export function CareerTimeline({ events }: CareerTimelineProps) {
     </div>
   );
 }
+
 

@@ -1,23 +1,23 @@
 :root {
   color-scheme: dark;
-  --bg-0: #4A0404;
-  --bg-1: #611324;
-  --bg-2: #752037;
-  --text-1: #FBEFF3;
-  --text-2: #DCC3CD;
-  --text-3: #B18C9C;
-  --pri-500: #A0507B;
-  --pri-400: #B46A91;
-  --pri-300: #C98AA8;
-  --sec-500: #C6769E;
-  --sec-400: #D893B4;
-  --acc-amber: #DFA48A;
+  --bg-0: #050608;
+  --bg-1: #0B1016;
+  --bg-2: #151C24;
+  --text-1: #F2F4F6;
+  --text-2: #C6CBD2;
+  --text-3: #8F96A3;
+  --pri-500: #752037;
+  --pri-400: #8E2F49;
+  --pri-300: #A2445F;
+  --sec-500: #A95E5E;
+  --sec-400: #C27B7B;
+  --acc-amber: #E0A889;
   --danger: #C23B44;
-  --ok: #3DA06A;
-  --line-1: #67232F;
-  --glow-pri: rgba(160, 80, 123, 0.28);
-  --glow-sec: rgba(117, 32, 55, 0.22);
-  --shadow-ambient: 0 18px 48px rgba(31, 4, 5, 0.55);
+  --ok: #37B26C;
+  --line-1: #1A222E;
+  --glow-pri: rgba(117, 32, 55, 0.3);
+  --glow-sec: rgba(169, 94, 94, 0.22);
+  --shadow-ambient: 0 16px 40px rgba(5, 6, 8, 0.65);
   --shadow-neon: 0 0 18px var(--glow-pri);
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(160, 80, 123, 0.32);
+  background-color: rgba(117, 32, 55, 0.35);
   color: var(--text-1);
 }
 

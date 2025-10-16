@@ -11,7 +11,7 @@ const navItems = [
 const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
 ---
 
-<header class="sticky top-0 z-40 border-b border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.78)] backdrop-blur-md">
+<header class="sticky top-0 z-40 border-b border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.78)] backdrop-blur-md">
   <div class="relative">
     <div class="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-6 sm:px-12 lg:px-16">
       <a href="/" class="flex items-center gap-3 text-lg font-semibold tracking-tight">
@@ -42,3 +42,4 @@ const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
     <ScrollProgress client:visible />
   </div>
 </header>
+

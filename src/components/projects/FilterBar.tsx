@@ -61,7 +61,7 @@ export function FilterBar({ options, value, onChange, ariaLabel }: FilterBarProp
   return (
     <div
       ref={containerRef}
-      className="relative overflow-hidden rounded-full border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.8)] px-2 py-2"
+      className="relative overflow-hidden rounded-full border border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.8)] px-2 py-2"
     >
       <motion.div
         ref={trackRef}
@@ -98,4 +98,5 @@ export function FilterBar({ options, value, onChange, ariaLabel }: FilterBarProp
     </div>
   );
 }
+
 

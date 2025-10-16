@@ -39,7 +39,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
 
   return (
     <motion.article
-      className="group relative flex h-full flex-col overflow-hidden rounded-card border border-[color:var(--line-1)] bg-[color:rgba(74,4,4,0.92)] p-6 shadow-ambient backdrop-blur"
+      className="group relative flex h-full flex-col overflow-hidden rounded-card border border-[color:var(--line-1)] bg-[color:rgba(11,16,22,0.92)] p-6 shadow-ambient backdrop-blur"
       initial={prefersReducedMotion ? undefined : { opacity: 0, y: 24, rotateZ: 1.5 }}
       whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0, rotateZ: 0 }}
       transition={prefersReducedMotion ? undefined : { delay: orbitalDelay, duration: 0.6, ease: 'easeOut' }}
@@ -68,7 +68,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       <div
         className={clsx(
           'absolute inset-0 opacity-0 transition duration-120 ease-settle group-hover:opacity-100',
-          'bg-[radial-gradient(circle_at_28%_22%,rgba(117,32,55,0.22),transparent_62%),radial-gradient(circle_at_76%_68%,rgba(160,80,123,0.18),transparent_58%)]'
+          'bg-[radial-gradient(circle_at_28%_22%,rgba(117,32,55,0.22),transparent_62%),radial-gradient(circle_at_76%_68%,rgba(169,94,94,0.18),transparent_58%)]'
         )}
         aria-hidden
       />
@@ -81,7 +81,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             {project.stack.slice(0, 6).map((tech) => (
               <span
                 key={tech}
-                className="rounded-full border border-[color:var(--line-1)] bg-[color:rgba(86,22,43,0.88)] px-3 py-1 text-xs uppercase tracking-[0.2em] text-[color:var(--text-3)]"
+                className="rounded-full border border-[color:var(--line-1)] bg-[color:rgba(21,28,36,0.88)] px-3 py-1 text-xs uppercase tracking-[0.2em] text-[color:var(--text-3)]"
               >
                 {tech}
               </span>
@@ -112,4 +112,6 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
     </motion.article>
   );
 }
+
+
 
