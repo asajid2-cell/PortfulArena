@@ -1,0 +1,41 @@
+---
+title: "Kinetic Ops Dashboard"
+summary: "Real-time monitoring suite for an industrial robotics team with inertial navigation between bays."
+problem: "Operators struggled to triage incidents quickly because the legacy UI was static and slow to surface context."
+insight: "By mapping gestures to velocity and aligning visuals with the physical system, we could reduce cognitive load for technicians."
+approach: "Astro for content, Next.js embedded for authenticated views, and a shared Tailwind token set so product and marketing shipped the same design language."
+outcome: "Incident acknowledgment time dropped by 28%, and operators requested that we roll the new system out across three additional plants."
+role: "Product engineer and design partner"
+category: "Product"
+stack:
+  - Astro
+  - Next.js
+  - tRPC
+  - Tailwind CSS
+  - Zustand
+metrics:
+  - label: "MTTA"
+    value: "28% faster"
+  - label: "Operator satisfaction"
+    value: "4.6 / 5"
+links:
+  - label: "Case study"
+    href: "https://example.com/kinetic-dashboard"
+featured: true
+order: 2
+publishedAt: "2023-11-04"
+---
+
+## Systems thinking
+
+The team manages dozens of tops (robots) across multiple bays. We aligned the UX with the mental model by making each bay a card with real-time telemetry, spin-down states, and escalation shortcuts.
+
+## Contributions
+
+- Architected the telemetry pipeline with WebSockets and graceful degradation to SSE
+- Co-designed the interaction model so velocity-based gestures felt intuitive with gloves on
+- Created MDX powered runbooks so ops could document clashes and resolutions inline
+
+## Result
+
+Deployment shipped with zero downtime, and the same codebase now powers digital signage and the executive overview mode.

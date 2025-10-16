@@ -1,0 +1,79 @@
+:root {
+  color-scheme: dark;
+  --bg-0: #4A0404;
+  --bg-1: #611324;
+  --bg-2: #752037;
+  --text-1: #FBEFF3;
+  --text-2: #DCC3CD;
+  --text-3: #B18C9C;
+  --pri-500: #A0507B;
+  --pri-400: #B46A91;
+  --pri-300: #C98AA8;
+  --sec-500: #C6769E;
+  --sec-400: #D893B4;
+  --acc-amber: #DFA48A;
+  --danger: #C23B44;
+  --ok: #3DA06A;
+  --line-1: #67232F;
+  --glow-pri: rgba(160, 80, 123, 0.28);
+  --glow-sec: rgba(117, 32, 55, 0.22);
+  --shadow-ambient: 0 18px 48px rgba(31, 4, 5, 0.55);
+  --shadow-neon: 0 0 18px var(--glow-pri);
+}
+
+.theme-dark {
+  background-color: var(--bg-0);
+  color: var(--text-1);
+}
+
+body {
+  background-color: var(--bg-0);
+  color: var(--text-1);
+  font-feature-settings: 'tnum' on, 'ss01' on;
+  font-synthesis: none;
+  min-height: 100%;
+}
+
+::selection {
+  background-color: rgba(160, 80, 123, 0.32);
+  color: var(--text-1);
+}
+
+a {
+  color: var(--pri-400);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--sec-500);
+  text-decoration: underline;
+}
+
+.section-header__arc {
+  transform-origin: left;
+  animation: arc-draw 0.4s var(--arc-ease, cubic-bezier(0.14, 0.8, 0.2, 1)) forwards;
+}
+
+@keyframes arc-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

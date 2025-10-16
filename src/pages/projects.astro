@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { ProjectsArena } from '../components/projects/ProjectsArena.tsx';
+import type { ArenaProject } from '../lib/types';
+import { getCollection } from 'astro:content';
+
+const projectEntries = await getCollection('projects');
+
+const projects: ArenaProject[] = projectEntries
+  .map(({ slug, data }) => ({
+    slug,
+    ...data,
+    heroImage: data.heroImage ? data.heroImage.src : undefined
+  }))
+  .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+---
+
+<BaseLayout title="Portful | Projects Arena">
+  <section class="border-b border-[color:var(--line-1)] bg-[color:var(--bg-1)] pb-20 pt-24 sm:pb-28 sm:pt-32">
+    <div class="mx-auto flex max-w-[1280px] flex-col gap-12 px-6 sm:px-12 lg:px-16">
+      <SectionHeader
+        eyebrow="Projects"
+        title="Selected projects"
+        description="A look at the client work, experiments, and long-haul builds I keep refining. Expect practical details, honest trade-offs, and working links."
+      />
+      <ProjectsArena projects={projects} client:visible />
+    </div>
+  </section>
+</BaseLayout>

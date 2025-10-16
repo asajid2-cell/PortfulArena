@@ -1,0 +1,42 @@
+---
+title: "Nebula Arena"
+summary: "Immersive launch experience for a physics puzzle game, blending R3F motion with responsive storytelling."
+problem: "The studio needed a performant teaser site that matched the kinetic feel of their gameplay without relying on heavy video files."
+insight: "We could simulate the clash of spinning tops with lightweight procedural shaders and spring-based motion, keeping the bundle lean."
+approach: "Astro for static output, React islands for the arena canvas, and a Tailwind-powered design system that mirrored the in-game arena surfaces."
+outcome: "Bounce rate dropped by 34%, and the launch waitlist filled in 72 hours thanks to the interactive walkthrough."
+role: "Lead engineer and motion designer"
+category: "Interactive"
+stack:
+  - Astro
+  - React Three Fiber
+  - Tailwind CSS
+  - Framer Motion
+metrics:
+  - label: "Visitors"
+    value: "38k in 10 days"
+  - label: "Conversion"
+    value: "12.4% waitlist opt-in"
+links:
+  - label: "Design teardown"
+    href: "https://example.com/nebula-teardown"
+  - label: "Repo"
+    href: "https://github.com/example/nebula-arena"
+featured: true
+order: 1
+publishedAt: "2024-08-12"
+---
+
+## Overview
+
+Players land in a launch bay where the arena comes alive: orbits trace neon rings, tops clash with subtle sparks, and the story unfolds as you scroll or flick through bays.
+
+## What I delivered
+
+- Built a physics-inspired hero experience with R3F and custom shader materials
+- Authored modular MDX content for the campaign timeline
+- Tuned performance to keep the initial payload under 140 KB gzipped
+
+## Behind the scenes
+
+I prototyped the arena interactions with Framer Motion velocity tracking, then ported the math into React Three Fiber for a consistent motion language between DOM and WebGL layers.
